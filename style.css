@@ -9,11 +9,15 @@
 /* navbar
  */
 .container-fluid {
-  background-color: rgb(52, 159, 247);
+  background-color: rgba(0, 0, 0, 0.705);
+  width: 100%;
+  width: 100%;
+}
+#headerNav{
   width: 100%;
 }
 .navbar-brand {
-  background-color: rgb(104, 180, 243);
+  background-color: rgb(255, 255, 255);
   border-radius: 30px;
   border: solid 3px rgba(255, 255, 255, 0.486);
   padding: 8px;
@@ -24,7 +28,7 @@
 }
 .navbar {
   padding: 0px;
-  margin: 30px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -33,7 +37,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 3rem;
+  margin-left: 13rem;
+  color: white;
 }
 .nav-link:hover{
     color: white;
@@ -62,7 +67,7 @@
 /* navbar */
 
 .bk-body{
-    background-image: url(./img/burbujas-gif.gif);
+    /* background-image: url(./img/burbujas-gif.gif); */
     background-color:rgb(175, 205, 230);
 }
 
@@ -106,56 +111,184 @@
 }
 
 #btnIngreso{
+    position: relative;
+    bottom: 3rem;
     margin-left: 20px;
     padding: 10px;
     border-radius: 10px;
-    background-color: gray;
+    background-color: black;
     color: white;
     font-size: 20px;
     
-}
-#btnIngreso:hover{
-    transition: 3s;
-transform: scale( 1.2 , 1.2)
-
-}
-
-
-/* .bolsa80{
-    width: 10rem;
-    justify-content: center;
-    align-items: center;
- }
- 
- 
-.bolsa80:hover{
-    width: 10rem;
-    transition: 2s;
-    transform: scale(1.5 , 1.5);
-}
-
-.card{
-    background-color: rgba(128, 128, 128, 0.507);
-    margin-left: 3rem;
-    display: inline-block;
     
 }
-.card-body
-.card-title
-.card-text
-{
+#btnIngreso:hover{
+    transition: 0.5s;
+background-color: grey;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-gap: 4rem;
+    padding-top: 10rem;
+}
+.gridItem1{
+    background-image: url(./img/80x110.jpeg);
+    background-size: cover;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 30px;
+}
+.gridItem2{
+    background-image: url(./img/90x120.jpeg);
+    background-size: cover;
+    border-radius: 30px;
+}
+.gridItem3{
+    background-image: url(./img/Lavandina.jpeg);
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.gridItem4{
+    background-image: url(./img/WIN_20230304_15_24_42_Pro.jpg);
+    background-size: 300px 300px;
+}
+
+
+#LogUser{
+    text-align: center;
+    padding: 10px;
+    border:solid 2px black;
+    border-radius: 5px;
+}
+#LogPass{
+    text-align: center;
+    padding: 10px;
+    border:solid 2px black;
+    border-radius: 5px;
+
+}
+
+.containerPass{
+    margin-left: 4rem;
+}
+.containerRegistrate{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3rem;
 }
-.btn{
-    background-color: rgb(52, 159, 247);
+.h5Registro{
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 3rem;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.711);
+    
+    
 }
-.containerCard1{
-    display: inline-block;
+
+.linkReg{
+  padding: 15px 5rem;
+  text-align: center;
+  border-radius: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin-left: 8rem;
+    text-decoration: none;
+    background-color:black;
 }
-.containerCard2{
-    display: inline-block;
-} */
+.linkReg:hover{
+  transition: 0.5s;
+  background-color: grey;
+}
+
+
+
+
+
+
+/*INICIO PAGINA REGISTRO */
+body{
+    background-image: url(./img/fondoRegistro.jpg);
+    background-size: cover; }
+    .h1Registro{
+        
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+        
+        font-size: 3rem;
+    }
+    .fondoForm {
+        max-width: 40rem;
+        margin: 10rem auto;
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.658);
+      }
+      
+      .labelReg
+      {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+      
+      .inputReg {
+        display: block;
+        width: 90%;
+        padding: 12px;
+        margin-bottom: 3rem;
+        border: 1px solid rgba(0, 0, 0, 0.619);
+        border-radius: 8px;
+      }
+      
+      .inputSub {
+        background-color: #13161391;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        margin-left: 40%;
+      }
+      
+      .inputSub:hover {
+        background-color: #000000a9;
+      }
+      .registrado{
+        display: inline-block;
+        margin-left: 80%;
+        font-weight: bold;
+      }
+      .linkIngresar{
+        font-weight: bold;
+        margin-top: 1rem;
+        color: brown;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+      }
+    /* }
+.fondoForm{
+    background-color: gray;
+    padding: 30px;
+}
+
+.nombre{
+    font-size: 2rem;
+    font-family:monospace
+     */
+
+/* FIN PAGINA REGISTRO */

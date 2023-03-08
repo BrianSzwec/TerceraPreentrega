@@ -1,0 +1,161 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+* 
+/* navbar
+ */
+.container-fluid {
+  background-color: rgb(52, 159, 247);
+  width: 100%;
+}
+.navbar-brand {
+  background-color: rgb(104, 180, 243);
+  border-radius: 30px;
+  border: solid 3px rgba(255, 255, 255, 0.486);
+  padding: 8px;
+  margin-right: 3rem;
+  margin-left: 1rem;
+  font-style: oblique;
+  font-size: 1.4rem;
+}
+.navbar {
+  padding: 0px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+}
+.nav-link:hover{
+    color: white;
+    transition: 1.5s;
+    transform: scale(1.5 , 1.5);
+}
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: oblique;
+  font-family: "tahoma", Times, serif;
+  font-size: 1.2rem;
+  
+}
+
+.navbar-toggler:hover{
+    border: solid black 1px;
+    transition: 1.5s;
+    transform:scale(1.1 , 1.1);
+}
+.navbar-collapse{
+    transition: 1s;
+
+}
+/* navbar */
+
+.bk-body{
+    /* background-image: url(./img/burbujas-gif.gif); */
+    background-color:rgb(175, 205, 230);
+}
+
+.containerofertas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Impact, 'Arial Narrow Bold', sans-serif;
+    margin-top: 2rem;
+
+}
+.ofertas{
+    font-size: 5rem;
+    
+}
+
+.container{
+    display: inline-block;
+}
+
+.containerLogin{
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+
+}
+.UserLog{
+    margin-right: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.containerPass{
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.UserPass{
+    margin-right: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#btnIngreso{
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    
+}
+#btnIngreso:hover{
+    transition: 3s;
+transform: scale( 1.2 , 1.2)
+
+}
+
+
+/* .bolsa80{
+    width: 10rem;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ 
+.bolsa80:hover{
+    width: 10rem;
+    transition: 2s;
+    transform: scale(1.5 , 1.5);
+}
+
+.card{
+    background-color: rgba(128, 128, 128, 0.507);
+    margin-left: 3rem;
+    display: inline-block;
+    
+}
+.card-body
+.card-title
+.card-text
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    background-color: rgb(52, 159, 247);
+    justify-content: center;
+    align-items: center;
+}
+.containerCard1{
+    display: inline-block;
+}
+.containerCard2{
+    display: inline-block;
+} */
