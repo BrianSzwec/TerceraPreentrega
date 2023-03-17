@@ -6,36 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
-    <title>Drogueria Industrial S.A</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+    <title>AUTO-NATION</title>
 </head>
 
-<body>
-    <h1 class="h1Registro">Bienvenidos a Drogueria Industrial S.A</h1>
-    <form class="fondoForm">
-        <div class="nombre">
-            <label for="nombre" class="labelReg">Nombre:</label>
-            <input type="text" class="inputReg" name="nombre" required placeholder="Ingresa tu Usuario">
-        </div>
-        <div class="email">
-            <label for="email" class="labelReg">Correo electrónico:</label>
-            <input type="email" class="inputReg" name="email" required placeholder="ejemplo@mail.com">
-        </div>
-        <div class="contrasenia">
-            <label for="contrasena" class="labelReg">Contraseña:</label>
-            <input type="password" class="inputReg" name="contrasena" required placeholder="Password">
-        </div>
-        <input type="submit" value="Registrarse" class="inputSub">
-        <div class="registrado">
+<body class="bk-body-reg">
+    <h1 class="h1Registro">Bienvenidos a AUTO-NATION</h1>
+    
+    <form id="form_register">
+        
+            <label for="nombre_usuario" id="labelNom">Nombre:</label>
+            <input type="text" id="nombre_usuario" name=""  placeholder="Ingresa tu Usuario">
+        
+        
+            <label for="email_registro" id="labelEmail">Correo electrónico:</label>
+            <input type="email" id="email_registro" name="" placeholder="ejemplo@mail.com">
+       
+        
+            <label for="clave_registro" id="labelPass">Contraseña:</label>
+            <input type="password" id="clave_registro" name=""  placeholder="Password">
+
+            <input type="submit" value="Registrarse" id="btn_registro">
+        
+            <div class="registrado">
             <span>Ya estas registrado?</span>
             <a href="../index.html" class="linkIngresar">Ingresa AQUI</a>
         </div>
     </form>
+    <div id="registro-exitoso">Registro exitoso. ¡Bienvenido! <br><a href="./repuestos.html" id="whebshopLink">WEBSHOP</a></div>
 
 
 
 
 
 
+    <script src="../Scripts/javLogin.js"></script>
 </body>
+<!-- <script src="sweetalert2.all.min.js"></script> -->
 
 </html>

@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>Quimicos Barracas</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <title>AUTO-NATION</title>
 </head>
 <header id="headerNav">
      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         
         <div class="container-fluid">
-          <a class="navbar-brand" href="">Drogueria Industrial</a>
+          <a class="navbar-brand" href="">AUTO-NATION</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link "href="#">Ofertas</a>
-              <a class="nav-link" href="#">Productos Liquidos</a>
-              <a class="nav-link" href="#">Tambores</a>
+              <a class="nav-link "href="./pages/repuestos.html">REPUESTOS</a>
+              <a class="nav-link" href="">AUTOS</a>
+              
               
             </div>
           </div>
@@ -28,25 +29,25 @@
 </header>
 <body class="bk-body">
     <div class="containerofertas">
-    <h1 class="ofertas">OFERTAS A USUARIOS</h1>
+    <h1 class="ofertas">TU PROXIMO VEHICULO A UN CLICK.</h1>
 </div>
-
+<form id="loginForm">
     <div class="containerLogin">
-      <h2 class="UserLog">Usuario</h2>
-      
-      <input id="LogUser" type="text" src="./jav.js" placeholder="Ingresa tu Usuario">
+      <label for="LogUser" id="labelLog">Usuario:</label>
+      <input id="LogUser" type="text" placeholder="Ingresa tu Usuario">
       </div>
       <div class="containerPass">
-      <h2 class="UserPass">Contraseña</h2>
-      <input type="password" name="" id="LogPass" placeholder="Ingrese su Contraseña">
+      <label for="LogPass_input" class="userPass_label">Contraseña:</label>
+      <input type="password" name="" id="LogPass_input" placeholder="Ingrese su Contraseña">
       <input  id="btnIngreso" type="submit" value="Ingresar">
     </div>
-    
+
     <div class="containerRegistrate">
         <a href="./pages/registro.html" class="linkReg"><strong>Registrate</strong></a>
     </div>
-
-      <section>
+    <div class="errorLog">Tu contraseña o tu Usuario es Incorrecto.</div>
+  </form>
+      <!-- <section>
         <article>
           <div class="container">
             <div class="gridItem1">1</div>
@@ -62,71 +63,13 @@
           </div>
         </article>
       </section>
-    <!-- <section>
-        <article>
-            <div class="containerCard1">
-        <div class="card" style="width: 12rem;">
-            <img src="./img/80x110.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Sampedrina</h5>
-              <p class="card-text">Paquete 10 Unidades 40 micrones de 80x110
-                  la mas utilizada por consorcios
-              </p>
-              <a href="#" class="btn btn-primary">Comprar</a>
-            </div>
-          </div>
-        </div>
-        </article> -->
-       
-       
-        <!-- <div class="containerCard2">
-        <article>
-            <div class="card" style="width: 12rem;">
-                <img src="./img/80x110.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Sampedrina</h5>
-                  <p class="card-text">Paquete 10 Unidades 40 micrones de 80x110
-                      la mas utilizada por consorcios
-                  </p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-            </div>
-            </article>
-            
-            
-            <article>
-                <div class="card" style="width: 12rem;">
-                    <img src="./img/80x110.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Sampedrina</h5>
-                      <p class="card-text">Paquete 10 Unidades 40 micrones de 80x110
-                          la mas utilizada por consorcios
-                      </p>
-                      <a href="#" class="btn btn-primary">Comprar</a>
-                    </div>
-                  </div>
-                </article>
-
-         <article> -->
-            <!-- <div class="container">
-                <div class="expo1">
-                    <img class="bolsa80" src="./img/80x110.jpeg" alt="">
-                        <h2 class="h280">SAMPEDRINA</h2>
-                    <ul>
-                        <li><strong> Bolsa La sampedrina</strong></li>
-                        <li>40 Micrones</li>
-                        <li>10 Unidades</li>
-                    </ul>
-                </div>
-            </div>
-        </article>
-    </section>  -->
+     -->
      
 
 
-    
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+     <script src="./Scripts/javLogin.js"></script>
 </body>
-<script src="<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-<script src="./jav.djs"></script>
+<!-- <script src="sweetalert2.all.min.js"></script> -->
+
 </html>
