@@ -217,7 +217,10 @@ color: white;
 }
 .errorLog{
   display: none;
+  color: red;
 }
+
+
 /* FIN    LOGIN INDEX ///////////////////////////////// */
 
 
@@ -357,7 +360,7 @@ color: white;
 
  /* TARJETAS */
  /* Estilos de la grilla */
- .card-container {
+ .card_container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
@@ -470,7 +473,14 @@ background-position-y: 30px;
 /* #btn-carrito1,#btn-carrito2,#btn-carrito3,#btn-carrito4,
 #btn-carrito5,#btn-carrito6,#btn-carrito7,#btn-carrito8 
 */
-#btn_agregar_carrito{ 
+#btn_agregar_carrito1,
+#btn_agregar_carrito2,
+#btn_agregar_carrito3,
+#btn_agregar_carrito4,
+#btn_agregar_carrito5,
+#btn_agregar_carrito6,
+#btn_agregar_carrito7,
+#btn_agregar_carrito8{ 
   background-color: #000;
   color: #fff;
   border: none;
@@ -486,7 +496,14 @@ background-position-y: 30px;
 }
 
 
-  #btn_agregar_carrito:hover{ 
+#btn_agregar_carrito1:hover,
+#btn_agregar_carrito2:hover,
+#btn_agregar_carrito3:hover,
+#btn_agregar_carrito4:hover,
+#btn_agregar_carrito5:hover,
+#btn_agregar_carrito6:hover,
+#btn_agregar_carrito7:hover,
+#btn_agregar_carrito8:hover{ 
   transition: 1s; 
   background-color: grey;}
 
@@ -494,7 +511,7 @@ background-position-y: 30px;
 
 
 /* CARRITO */
-#boton-carrito-abierto{
+#boton_carrito_abierto{
   position: fixed;
   background-color: red;
   border: none;
@@ -510,7 +527,7 @@ background-position-y: 30px;
   cursor: pointer;
 
 }
-#boton-carrito-abierto img{
+#boton_carrito_abierto img{
   width: 30px;
   height: 30px;
   margin-right: 10px;
@@ -540,6 +557,12 @@ background-position-y: 30px;
   margin-right: 10px;
 }
 
+p,td,tr{
+  color: white;
+}
+carrito.container_carrito{
+  width: 300px;
+}
 .container_carrito {
 
 display: none;
@@ -549,8 +572,9 @@ position: fixed;
   transform: translateY(-50%);
   transition: 1.5s;
   border-radius: 30px;
-  padding: 10px;
+  padding: 5px;
   width: 200px;
+  
   
 }
 
@@ -571,9 +595,13 @@ img{
 
 }
 
-td{
+.td_colors{
+  color: white;
   height: 100px;
 }
+
+
+
 
 h2{
   color: white;
