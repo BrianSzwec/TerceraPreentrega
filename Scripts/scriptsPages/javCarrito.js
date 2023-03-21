@@ -75,33 +75,52 @@ function render_carrito(){
 
 
 
-function borrar_producto(e){
-  
+ function borrar_producto(e){
+      //abuelo
   let div = e.target.parentNode.parentNode;
-
-  let producto_a_eliminar = div.querySelectorAll('tr').textContent;
-  
-
   
   
+  let producto_a_eliminar = div.querySelector('p').textContent;
   
-  function  eliminar_producto(producto){
-
+  function eliminarProd(producto){
     return producto.nombre != producto_a_eliminar;
   }
-  
-  
-  let resultado_filter = carritoA.filter(eliminar_producto)
-  
- 
-  console.log(carritoA)
-  console.log(resultado_filter)
-  
- 
-  carritoA = resultado_filter;
 
- div.remove();
-}
+
+
+  
+  let resultado_filter = carritoA.filter(eliminarProd);
+  carritoA = resultado_filter;
+  
+render_carrito()
+  // console.log(carritoA)
+  // console.log(resultado_filter)
+  
+  
+  // div.remove()
+ }
+  
+
+  
+  
+  
+//   function  eliminar_producto(producto){
+
+//     return producto.nombre != producto_a_eliminar;
+//   }
+  
+  
+//   let resultado_filter = carritoA.filter(eliminar_producto)
+  
+ 
+//   console.log(carritoA)
+//   console.log(resultado_filter)
+  
+ 
+//   carritoA = resultado_filter;
+
+//  div.remove();
+// }
 
 
 
