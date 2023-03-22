@@ -5,7 +5,7 @@ let carritoA = [];
 let total = 0;
 
 
-
+///////////AGREGAR A CARRITO
 function agregar_a_carrito(e){
     
     let etiqueta = e.target;
@@ -43,8 +43,9 @@ render_carrito()
 }
 
 
-
+///////////MOSTRAR CARRITO Y RENDERIZAR PRODS
 function render_carrito(){
+  
 
   let cuerpo = document.getElementById('tbody');
     cuerpo.innerHTML= "";
@@ -74,7 +75,7 @@ function render_carrito(){
 }
 
 
-
+////////////FUNCION ELIMINAR PRODUCTO
  function borrar_producto(e){
       //abuelo
   let div = e.target.parentNode.parentNode;
@@ -93,41 +94,11 @@ function render_carrito(){
   carritoA = resultado_filter;
   
 render_carrito()
-  // console.log(carritoA)
-  // console.log(resultado_filter)
-  
-  
-  // div.remove()
+ 
  }
   
 
-  
-  
-  
-//   function  eliminar_producto(producto){
-
-//     return producto.nombre != producto_a_eliminar;
-//   }
-  
-  
-//   let resultado_filter = carritoA.filter(eliminar_producto)
-  
- 
-//   console.log(carritoA)
-//   console.log(resultado_filter)
-  
- 
-//   carritoA = resultado_filter;
-
-//  div.remove();
-// }
-
-
-
-
-
-
-
+/////////////////BOTON ELIMINAR
 let btn_compra = document.querySelectorAll('.card-button');
 for(let boton of btn_compra){
     boton.addEventListener('click' , agregar_a_carrito)
